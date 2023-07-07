@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;300;400;500;600;700;800&family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@400;500;600;700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');            
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+html{
+      font-size: 62.5%;
+}
+body{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      background-color: #eee;
+      flex-direction: column;
+      gap: 0rem;
+}
+.container{
+      position: relative;
+      top: 3rem;
+      height: 90%;
+      width: 90%;
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: #fff;
+      transition: background-image 0.5s;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      background-size: cover;
+}
+.hadis{
+      position: absolute;
+      height: 90%;
+      width: 95%;
+      border-radius: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.5s;
+}
+.siyahbg{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 5rem;
+      background-color: rgba(0, 0, 0, 0.59);
+}
+.turkce{
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      left: 15rem;
+      right: 12rem;
+      font-size: 4rem;
+      flex-wrap: wrap;
+      font-family: Poppins;
+      font-weight: 500;
+}
+.kaynak{
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      right: 5rem;
+}
+.kirkhadis{
+      position: absolute;
+      top: 1rem;
+      left: auto;
+      right: auto;
+      font-family: Unbounded;
+      font-size: 8rem;
+      z-index: 100;
+}
+button{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      z-index: 100;
+}
+button:nth-child(1){
+      left: 2rem;
+}
+button:nth-child(2){
+      right: 2rem;
+}
+.fas{
+      font-size: 10rem;
+      cursor: pointer;
+      
+}
+.right-arrow{
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      right: 1rem;
+}
+.left-arrow{
+      position: absolute;
+      top: auto;
+      bottom: auto;
+      left: 1rem;
+}
+.fade-in {
+animation: fade-in .5s forwards;
+}
+.fade-out {
+animation: fade-out .5s forwards;
+}
+@keyframes fade-in {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+@keyframes fade-out {
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+/* .beyaz{
+padding: 3rem;
+position: absolute;
+top: 1rem;
+left: 1rem;
+border: 1px solid ;
+}
+.siyah{
+padding: 3rem;
+position: absolute;
+top: 1rem;
+left: 10rem;
+border: 1px solid ; 
+} */
+footer {
+      position: absolute;
+      bottom: 0;
+      background-color: #000;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 40px;
+      font-size: 20px;
+      font-family: 'Unbounded';
+      overflow: hidden;
+      background-color: #000;
+    }
+    
+    footer .logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    footer i {
+      font-size: 35px;
+      cursor: pointer;
+      transition: .5s;
+    }
+    footer a {
+      color: #fff;
+    }
+    .fa-instagram:hover {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.5s;
+    }
+    .fa-twitter:hover {
+      color: rgb(56, 141, 221);
+      transition: 0.5s;
+    }
+    .fa-github{
+      border-radius: 50%;
+    }
+    .fa-github:hover {
+      color: #000;
+      background-color: #fff;
+      transition: all 0.5s;
+    }
+    .fa-envelope:hover {
+      color: rgb(211, 62, 62);
+      transition: 0.5s;
+    }
+@media screen and (max-width:680px) {
+      .turkce{
+            font-size: 2.5rem;
+            left: 7rem;
+            right: 5rem;
+      }
+      .kirkhadis{
+            font-size: 5.5rem;
+      }
+      .container{
+            height: 80%;
+      }
+      footer{
+            font-size: 1.5rem;
+
+            gap: 5px;
+            padding: 3rem;
+            word-break: break-all;
+      }
+      footer p{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+      }
+      footer i{
+            font-size: 2rem;
+      }
+      .ozel{
+            display: none;
+      }
+      .right-arrow{
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+      }
+      .left-arrow{
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+      }
+}
+@media (min-width:400px) and (max-width:680px) {
+      .turkce{
+            font-size: 2.5rem;
+            left: 7rem;
+            right: 5rem;
+      }
+      .kirkhadis{
+            font-size: 5.5rem;
+      }
+      .container{
+            height: 85%;
+      }
+      footer{
+            font-size: 1.5rem;
+            gap: 5px;
+            padding: 5rem;
+            word-break: break-all;
+      }
+      footer p{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+      }
+      footer i{
+            font-size: 2.5rem;
+      }
+      .ozel{
+            display: none;
+      }
+      .right-arrow{
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+      }
+      .left-arrow{
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+      }
+}
+@media (min-width:300px) and (max-width:400px){
+      .turkce{
+            font-size: 2.2rem;
+            left: 4.5   rem;
+            right: 2.5rem;
+      }
+      .kirkhadis{
+            font-size: 4.3rem;
+      }
+      .container{
+            height: 80%;
+      }
+      footer{
+            font-size: 1.15rem;
+            gap: .5rem;
+            padding: 3.3rem;
+            word-break: break-all;
+      }
+      footer p{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+      }
+      footer i{
+            font-size: 2.3rem;
+      }
+      .ozel{
+            display: none;
+      }
+      .right-arrow{
+            position: absolute;
+            bottom: 2rem;
+            right: 1rem;
+      }
+      .left-arrow{
+            position: absolute;
+            bottom: 2rem;
+            left: 1rem;
+      }
+      footer .logos {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+      }
+      .largefont{
+            font-size: 1.9rem;
+      }
+}
